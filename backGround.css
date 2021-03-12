@@ -1,0 +1,39 @@
+nav,
+header,
+footer
+{
+    display: block;
+}
+body
+{
+    background-color: blue;
+    margin: 0;
+}
+
+nav.navigationBarAtTop {
+    color: #fff;
+    width: 100%;
+    margin: 0%;
+    list-style: none;
+    overflow: hidden;
+    background-color: azure;
+}
+nav.navigationBarAtTop li,a {
+    float: left;
+    margin: 0;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 16px;
+    font-size: 20px;
+    padding: 12px;
+    color: darkcyan;
+    font-weight: 900;
+}
+nav.navigationBartAtTop ul li a{
+    width: auto;
+    }
+#navigationBarAtRight 
+{
+    float:right;
+}
