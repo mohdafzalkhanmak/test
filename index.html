@@ -1,16 +1,28 @@
 <html>
     <head>
+         <script>
+        function dropDown()
+             {
+                 var x = document.getElementById("navBarId");
+                 if(x.className === "navBar")
+                     {
+                         x.className = "respond";
+                     }
+                 else{
+                     x.className = 'navBar';
+                 }
+             }
+        </script>
         <title>
             Menu Scanner
         </title>
         <link rel="stylesheet" href="backGround.css">
-        
         <link rel="stylesheet" href="index.css">
         
     </head>
     <body>
         <nav class="navigationBarAtTop">
-            <ul>
+            <ul class="navBar" id="navBarId">
                 <li>
                     <a href="index.html">
                 Home
@@ -30,6 +42,11 @@
                 </li>
                 <li id="navigationBarAtRight">
                 <a href="SignUp.html">Sign Up</a>
+                </li>
+                <li class="menuDropButton">
+                    <a href="#" onclick="dropDown()">
+                    &#9776;</a>
+                    	
                 </li>
             </ul>
             

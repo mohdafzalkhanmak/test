@@ -10,9 +10,7 @@ body
     margin: 0;
 }
 
-nav.navigationBarAtTop {
-    color: #fff;
-    width: 100%;
+nav.navigationBarAtTop ul{
     margin: 0%;
     list-style: none;
     overflow: hidden;
@@ -27,7 +25,7 @@ nav.navigationBarAtTop li,a {
     min-height: 16px;
     font-size: 20px;
     padding: 12px;
-    color: darkcyan;
+    color: red;
     font-weight: 900;
 }
 nav.navigationBartAtTop ul li a{
@@ -36,4 +34,53 @@ nav.navigationBartAtTop ul li a{
 #navigationBarAtRight 
 {
     float:right;
+}
+nav.navigationBarAtTop ul li a:hover
+{
+    background-color: green;
+    color: white;
+}
+nav.navigationBarAtTop ul.navBar li.menuDropButton
+{
+    display: none;
+}
+/*///////////////////////MPOBILE SIZE///////////////////////////////*/
+@media screen and (max-width:680px)
+{
+    nav.navigationBarAtTop ul.navBar li:not(:nth-child(1)) {
+        display: none;
+    }
+nav.navigationBarAtTop ul.navBar li.menuDropButton
+    {
+        display: block;
+        float: right;
+        
+        
+    }
+    nav.navigationBarAtTop ul.respond
+    {
+
+        position:grid;
+         width: 100%;
+    }
+  
+    nav.navigationBarAtTop ul.respond li{
+        float: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+    nav.navigationBarAtTop ul.respond li.menuDropButton
+    {
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0;
+           
+    }
+    
+    
+    
 }
