@@ -1,20 +1,40 @@
 div.Container{
     width: 100%;
-    padding-left: 40%;
+ text-align: center;
+    margin: 0;
 }
 h1,h3
 {
     color:aliceblue;
     text-shadow: 5px 3px 1px rgb(50 90 100);
-}
-h3{
-    padding-left: 10%;
+    font-size: 35px;
+    font-weight: 900;
+    width: 100%;
+    margin: 0;  
 }
 div.ContainerForMenu{
     width: 100%;
-    padding-left: 20%;
+    margin: 0;
 }
-div.ContainerForMenu table.menuItem{
+div.ContainerForMenu table.menuItem,
+tr,
+th,
+td{
     font-size: 25px;
     border: 2px solid black;
+    width: auto;
+    text-align: center;
+}
+table.menuItem tr th
+{
+    font-size:30px;
+    font-weight: 800;
+}
+table.menuItem tr td{
+    color: greenyellow;
+}
+table.menuItem tr input{
+    font-size:20px;
+    color: darkblue;
+    font-weight: 600;
 }
