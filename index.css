@@ -1,0 +1,20 @@
+div.Container{
+    width: 100%;
+    padding-left: 40%;
+}
+h1,h3
+{
+    color:aliceblue;
+    text-shadow: 5px 3px 1px rgb(50 90 100);
+}
+h3{
+    padding-left: 10%;
+}
+div.ContainerForMenu{
+    width: 100%;
+    padding-left: 20%;
+}
+div.ContainerForMenu table.menuItem{
+    font-size: 25px;
+    border: 2px solid black;
+}
