@@ -12,6 +12,7 @@
                      x.className = 'navBar';
                  }
              }
+    
         </script>
         <title>
             Menu Scanner
@@ -60,6 +61,7 @@
         </h3>
             </div>
         <div class="ContainerForMenu">
+            <form>
         <table class="menuItem">
             <tr>
                 <th>
@@ -77,7 +79,7 @@
                 
             </tr>
             <tr>
-                <th colspan="4">
+                <th colspan="4" class="HeadingMenu">
                     Roti
                 </th>
             </tr>
@@ -86,37 +88,40 @@
                     Tava Roti
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp" id= "imgLarge">
                 </td>
                 <td>
+                    &#8377;50
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number" placeholder="Enter Quantity" min="0"></td>
             </tr>
             <tr>
                 <td>
                     Rumali Roti
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;35
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number" placeholder="Enter Quantity" min="0"></td>
             </tr>
             <tr>
                 <td>
                     Butter Roti
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;100
                 </td>
-                <td id=""><input name="quantity" type="number"></td>
+                <td id=""><input name="quantity" type="number" placeholder="Enter Quantity" min="0"></td>
             </tr>
             <!--#####################Naan Items###########################-->
             <tr>
-                <th colspan="4">
+                <th colspan="4" class="HeadingMenu">
                     Naan
                 </th>
             </tr>
@@ -125,26 +130,28 @@
                     Plane Naan
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;120
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number" placeholder="Enter Quantity" min="0"></td>
             </tr>
             <tr>
                 <td>
                     Butter Naan
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;110
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number" placeholder="Enter Quantity"  min="0"></td>
             </tr>
 <!-- ##################### Starter Items         ##################-->
             <tr>
-                <th colspan="4">
+                <th colspan="4" class="HeadingMenu">
                     Snacks
                 </th>
             </tr>
@@ -153,57 +160,70 @@
                    Veg Pakoda
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;20
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number"placeholder="Enter Quantity"  min="0"></td>
             </tr>
             <tr>
                 <td>
                     Onion Pakoda
                 </td>
                 <td>
-                <img src="#">
+                    &#8377;35
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number"placeholder="Enter Quantity"  min="0"></td>
             </tr>
             <tr>
                 <td>
                     Paneer Pakoda
                 </td>
                 <td>
-                <img src="#">
+                    &#8377;45
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
                 </td>
-                <td id=""><input name="quantity" type="number"></td>
+                <td id=""><input name="quantity" type="number" onchange="valid()" placeholder="Enter Quantity" min="0"></td>
             </tr>
             <tr>
                 <td>
                     Chicken Pakoda
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;50
                 </td>
-                <td id=""><input type="number"></td>
+                <td id=""><input type="number" placeholder="Enter Quantity" onchange="valid()" min="0"></td>
             </tr>
             <tr>
                 <td>
                     Masala Papad    
                 </td>
                 <td>
-                <img src="#">
+                <img src="tavaRoti.webp">
                 </td>
                 <td>
+                    &#8377;10
                 </td>
-                <td id=""><input name="quantity" type="number"></td>
+                <td id=""><input name="quantity" type="number"  placeholder="Enter Quantity"  min="0"></td>
             </tr>
             </table>
         </div>
+        
+      <div class="Buttons">
+        <input id="Submit" type="Button" value="Submit">
+        <input id="Clear" type="Button" value="Clear">
+        </div>
+            </form>
+        <footer>
+        </footer>
     </body>
 </html>

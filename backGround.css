@@ -6,7 +6,7 @@ footer
 }
 body
 {
-    background-color: blue;
+    background-color:darkcyan;
     margin: 0;
 }
 
@@ -44,6 +44,11 @@ nav.navigationBarAtTop ul.navBar li.menuDropButton
 {
     display: none;
 }
+img 
+{
+height: auto;
+    width: auto;
+}
 /*///////////////////////MPOBILE SIZE///////////////////////////////*/
 @media screen and (max-width:680px)
 {
@@ -80,7 +85,10 @@ nav.navigationBarAtTop ul.navBar li.menuDropButton
         padding: 0;
            
     }
-    
+    img {
+    height: auto;
+    width: 150px;
+}
     
     
 }
