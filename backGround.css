@@ -50,7 +50,7 @@ height: auto;
     width: auto;
 }
 /*///////////////////////MPOBILE SIZE///////////////////////////////*/
-@media screen and (max-width:800px)
+@media screen and (max-width:680px)
 {
     nav.navigationBarAtTop ul.navBar li:not(:nth-child(1)) {
         display: none;
@@ -67,6 +67,7 @@ nav.navigationBarAtTop ul.navBar li.menuDropButton
 
         position:grid;
          width: 100%;
+        margin:0;
     }
   
     nav.navigationBarAtTop ul.respond li{
@@ -88,6 +89,7 @@ nav.navigationBarAtTop ul.navBar li.menuDropButton
     img {
     height: auto;
     width: 150px;
+        margin:0;
 }
     
     
