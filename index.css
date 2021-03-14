@@ -5,8 +5,8 @@ div.Container{
 }
 h1,h3
 {
-    color:aliceblue;
-    text-shadow: 5px 3px 1px rgb(50 90 100);
+    color:orchid;
+    text-shadow: 2px 1px 3px rgb(100 10 10);
     font-size: 35px;
     font-weight: 900;
     margin: 0;  
@@ -23,6 +23,31 @@ td{
     border: 2px solid black;
     text-align: center;
 }
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after
+{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-4
+{
+    width: 30%;
+}
+.col-8{
+    width:70%;
+}
+.col-5{
+    width: 45%;
+}
+.col-2{
+    width: 20%;
+}
 table.menuItem tr th
 {
     font-size:30px;
@@ -30,8 +55,11 @@ table.menuItem tr th
     background-color: forestgreen;
 }
 table.menuItem tr td{
-    color: greenyellow;
+   border-color: black;
+    color: blue;
+    font-weight: 400;
 }
+
 table.menuItem tr input{
     font-size:20px;
     color: darkblue;
@@ -59,4 +87,29 @@ body div.Buttons
     height: auto;
     text-align: center;
     font-size: 40px;
+}
+div.Buttons input{
+    background-color: cornflowerblue;
+}
+
+div.Buttons input:hover{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+table.menuItem tr:hover{
+    background-color: azure;
+    font-weight: 800;
+}
+@media screen and (max-width: 680px){
+    div.row{
+        width: 100%;
+    }
+    div.row div.col-8{
+        width:100%;
+    }
+    table.menuItem tr td input{
+        width: 80%;
+    }
 }
