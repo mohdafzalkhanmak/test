@@ -110,6 +110,6 @@ table.menuItem tr:hover{
         width:100%;
     }
     table.menuItem tr td input{
-        width: 80%;
+        width: 100%;
     }
 }
