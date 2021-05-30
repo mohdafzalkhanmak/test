@@ -3,7 +3,8 @@ div.Container{
  text-align: center;
     margin: 0;
 }
-h1,h3
+h1,
+h3
 {
     color:orchid;
     text-shadow: 2px 1px 3px rgb(100 10 10);
